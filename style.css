@@ -7,6 +7,59 @@ body {
 
 /* Category Buttons */
 #category-buttons label {
-     border: 2px solid #43a047;
+  border: 2px solid #43a047;
+  padding: 10px 26px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 17.12px;
+  color: #388e3c;
+  background-color: #e8f5e9;
+  box-shadow: 0 1px 6px rgba(67, 160, 71, 0.05);
+  transition: all 0.3s ease;
+}
 
+#category-buttons label:hover {
+  background-color: #43a047;
+  color: #ffffff;
+}
+
+#category-buttons input {
+  display: none;
+}
+
+#category-buttons div:has(input:checked) label {
+  background: linear-gradient(90deg, #43a047 60%, #8bc34a 100%);
+  box-shadow: 0 2px 12px rgba(67, 160, 71, 0.11);
+  border-color: #388e3c;
+}
+
+/* Menu */
+.menu-card {
+  border-radius: 18px;
+  background-color: #f5fff7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-7px);
+}
+
+.menu-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu-card-badge {
+  font-size: 0.97rem;
+  background: linear-gradient(90deg, #43a047 60%, #8bc34a 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(67, 160, 71, 0.15);
+}
+
+.menu-card-price {
+  font-size: 1.01rem;
+  color: #388e3c;
+  border: 1.2px solid #43a047;
 }
