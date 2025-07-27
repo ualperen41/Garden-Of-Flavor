@@ -80,3 +80,10 @@ body {
 .blog-card:hover {
 transform: translateY(-7px)  scale(1.01);
 }
+
+/* Detail Image */
+.detail-img {
+  min-height: 320px !important;
+  object-fit: cover;
+  max-height: 420px !important;
+}
