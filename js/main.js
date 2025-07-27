@@ -1,7 +1,10 @@
 import getMenu from "./api.js";
-import { renderDetailPage, renderMenuCard, renderNotFound, uiElements } from "./ui.js";
+import { renderDetailPage, renderLoader, renderMenuCard, renderNotFound, uiElements } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
+  // Loader render et
+  renderLoader();
+  
   // Api isteği at
   const menuData = await getMenu();
 
