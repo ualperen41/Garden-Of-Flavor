@@ -1,5 +1,5 @@
 import getMenu from "./api.js";
-import { renderDetailPage, renderMenuCard, uiElements } from "./ui.js";
+import { renderDetailPage, renderMenuCard, renderNotFound, uiElements } from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   // Api isteği at
@@ -44,7 +44,13 @@ const selectedCategory =button.id;
 // menudata içerisinde itemId e sahip elemanı bul
  const product =menuData.find((item) => item.id == itemId)
 
- 
+ // Eğer product yoksa not-found sayfası renderla
+if(!product) {
+  renderNotFound();
+} else {
+
+}
+
 
  // Bulunan producta göre arayüzü renderla
  renderDetailPage(product);
